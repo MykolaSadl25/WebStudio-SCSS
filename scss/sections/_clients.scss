@@ -1,0 +1,47 @@
+.clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-title{
+    color: var(--team-heading-color);
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+
+.clients-list{
+    display: flex;
+    justify-content:space-between;
+}
+
+.clients-item{
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: 1px solid var(--social-color);
+    transition-property: border;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(1,.45,0,1.15);
+}
+
+.clients-item:hover{
+    border: 1px solid var(--logo-color);
+    .clients-icon{
+        width: 106px;
+        height: 60px;
+        fill: var(--logo-color);
+    }
+}
+
+.clients-icon{
+    width: 106px;
+    height: 60px;
+    fill: var(--social-color);
+    transition-property: fill;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(1,.45,0,1.15);
+}
