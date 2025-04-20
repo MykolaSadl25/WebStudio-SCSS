@@ -26,7 +26,7 @@
         transition-duration: 300ms;
         transition-timing-function: cubic-bezier(1,0.45,0,1.15);
 
-        &__item:hover{
+        &:hover{
             border: 1px solid $logo-color;
             .clients__icon{
                 width: 106px;

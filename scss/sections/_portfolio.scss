@@ -45,7 +45,7 @@
     }
 
     &__item{
-        outline: 1px solid $border-color;
+        border: 1px solid $border-color;
         background: $text-color;
         flex-basis: calc((100% - 60px) /3);
         transition-property: box-shadow;
