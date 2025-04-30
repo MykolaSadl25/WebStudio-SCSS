@@ -1,0 +1,12 @@
+%animation{
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(1,0.45,0,1.15);
+}
+
+@mixin flex-box($justify:center,$align:center,$wrap:wrap,$direction:column){
+    display: flex;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+    align-items: $align;
+    flex-direction: $direction;
+}

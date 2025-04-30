@@ -16,12 +16,17 @@ h1, h2, h3, p {
   margin: 0;
 }
 
+.gallery__subtext, .gallery__item, .gallery__btn, .modal__comment, .modal__input, .modal__icons, .modal__icon, .footer__elem, .clients__item, .team__icon, .team__social, .header__phone, .header__mail, .header__contact, .header__link::after, .header__link {
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(1, 0.45, 0, 1.15);
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: Roboto;
+  font-family: "Roboto";
 }
 
 .container {
@@ -77,8 +82,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.28px;
   transition-property: color;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(1, 0.45, 0, 1.15);
 }
 .header__link:hover {
   color: #2196F3;
@@ -99,8 +102,6 @@ body {
   bottom: -34px;
   opacity: 0;
   transition-property: opacity;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(1, 0.45, 0, 1.15);
 }
 .header__link:hover::after {
   display: block;
@@ -116,8 +117,6 @@ body {
   display: flex;
   align-items: center;
   transition-property: color;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(1, 0.45, 0, 1.15);
 }
 .header__contact:hover {
   color: #2196F3;
@@ -138,8 +137,6 @@ body {
   height: 12px;
   margin-right: 10px;
   transition-property: fill;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(1, 0.45, 0, 1.15);
 }
 .header__phone {
   fill: #757575;
@@ -147,8 +144,6 @@ body {
   height: 16px;
   margin-right: 10px;
   transition-property: fill;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(1, 0.45, 0, 1.15);
 }
 
 .hero {
@@ -301,7 +296,6 @@ body {
 .work__subtitle {
   color: #FFF;
   text-align: center;
-  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -313,7 +307,9 @@ body {
   height: 70px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  flex-direction: column;
   position: absolute;
   bottom: 0;
 }
@@ -328,7 +324,7 @@ body {
   gap: 30px;
 }
 .team__item {
-  background-color: #F5F4FA;
+  background-color: #FFF;
   border-radius: 0px 0px 4px 4px;
   text-align: center;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
@@ -372,11 +368,11 @@ body {
   height: 44px;
   border-radius: 50%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
   transition-property: background-color;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(1, 0.45, 0, 1.15);
 }
 .team__social:hover {
   width: 44px;
@@ -395,8 +391,6 @@ body {
   height: 20px;
   fill: #AFB1B8;
   transition-property: fill;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(1, 0.45, 0, 1.15);
 }
 .team__icon:hover {
   width: 20px;
@@ -427,8 +421,6 @@ body {
   border-radius: 4px;
   border: 1px solid #AFB1B8;
   transition-property: border;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(1, 0.45, 0, 1.15);
 }
 .clients__item:hover {
   border: 1px solid #2196F3;
@@ -529,10 +521,10 @@ body {
   border-radius: 50%;
   display: flex;
   justify-content: center;
+  flex-wrap: no-wrap;
   align-items: center;
+  flex-direction: column;
   transition-property: background-color;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(1, 0.45, 0, 1.15);
 }
 .footer__elem:hover {
   background-color: #2196F3;
@@ -548,9 +540,10 @@ body {
 }
 .footer__form {
   display: flex;
-  flex-direction: column;
-  align-items: start;
   justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: start;
+  flex-direction: column;
   margin-left: 93px;
 }
 .footer__subbox {
@@ -609,8 +602,10 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   display: flex;
-  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
 }
 
 .is-hidden {
@@ -644,21 +639,21 @@ body {
   right: 8px;
 }
 .modal__close:hover .modal__icon, .modal__close:focus .modal__icon {
-  fill: #2196f3;
+  fill: #2196F3;
 }
 .modal__icon {
   width: 18px;
   height: 18px;
-  fill: var(--title-color);
+  fill: #000;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  flex-direction: column;
   transition-property: fill;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(1, 0.45, 0, 1.15);
 }
 .modal__title {
-  color: #212121;
+  color: #000;
   text-align: center;
   font-size: 20px;
   font-style: normal;
@@ -679,13 +674,11 @@ body {
 .modal__icons {
   width: 18px;
   height: 18px;
-  fill: var(--team-heading-color);
+  fill: #212121;
   position: absolute;
   top: 32px;
   left: 12px;
   transition-property: fill;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(1, 0.45, 0, 1.15);
 }
 .modal__input {
   width: 100%;
@@ -697,15 +690,13 @@ body {
   margin-bottom: 10px;
   padding-left: 42px;
   transition-property: outline;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(1, 0.45, 0, 1.15);
 }
 .modal__input:hover, .modal__input:focus {
   border: none;
-  outline: 1px solid #2196f3;
+  outline: 1px solid #2196F3;
 }
 .modal__input:hover + .modal__icons, .modal__input:focus + .modal__icons {
-  fill: #2196f3;
+  fill: #2196F3;
 }
 .modal__comment {
   width: 100%;
@@ -721,8 +712,6 @@ body {
   letter-spacing: 0.12px;
   margin-top: 4px;
   transition-property: border;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(1, 0.45, 0, 1.15);
 }
 .modal__comment:hover, .modal__comment:focus {
   border: none;
@@ -748,7 +737,7 @@ body {
   margin-right: 4px;
 }
 .modal__link {
-  color: #2196f3;
+  color: #2196F3;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -768,14 +757,14 @@ body {
   justify-content: center;
 }
 .modal__btn {
-  color: #fff;
+  color: #FFF;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87; /* 187.5% */
   letter-spacing: 0.96px;
   border-radius: 4px;
-  background: var(--logo-color);
+  background: #2196F3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;
   padding: 10px 52px;
@@ -809,18 +798,18 @@ body {
   flex-shrink: 0;
   padding: 6px 22px;
   transition-property: color, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(1, 0.45, 0, 1.15);
 }
 .gallery__btn:hover {
   color: rgb(245, 244, 250);
   background-color: #2196F3;
-  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.1), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 .gallery__list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
   margin-top: 50px;
   gap: 30px;
 }
@@ -829,8 +818,6 @@ body {
   background: #FFF;
   flex-basis: calc((100% - 60px) / 3);
   transition-property: box-shadow;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(1, 0.45, 0, 1.15);
 }
 .gallery__item:hover {
   border: 1px solid #EEE;
@@ -868,8 +855,6 @@ body {
   opacity: 0;
   padding: 63px 24px;
   transition-property: opacity, transform;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(1, 0.45, 0, 1.15);
   transform: translateY(100%);
 }
 .gallery__text {
