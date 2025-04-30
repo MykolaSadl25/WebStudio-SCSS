@@ -613,6 +613,10 @@ body {
   pointer-events: none;
 }
 
+.is-hidden > .modal {
+  transform: scale(0);
+}
+
 .modal {
   width: 528px;
   border-radius: 4px;
@@ -621,12 +625,9 @@ body {
   position: relative;
   padding: 40px;
   transition-property: transform;
-  transition-duration: 250ms;
+  transition-duration: 2500ms;
   transition-timing-function: ease-in;
   transform: scale(1);
-}
-.modal .is-hidden .modal {
-  transform: scale(0);
 }
 .modal__close {
   width: 30px;
