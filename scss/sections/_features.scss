@@ -16,8 +16,7 @@
         border-radius: 4px;
         margin-bottom: 30px;
         background-image:url(../indeximages/antenna.png);
-        background-repeat: no-repeat;
-        background-position: center;
+        @extend %background;
         background-size: 70px;
     }
 
@@ -30,8 +29,7 @@
         border-radius: 4px;
         margin-bottom: 30px;
         background-image:url(../indeximages/clock.png);
-        background-repeat: no-repeat;
-        background-position: center;
+        @extend %background;
         background-size: 70px;
     }
     
@@ -44,8 +42,7 @@
         border-radius: 4px;
         margin-bottom: 30px;
         background-image:url(../indeximages/diagram.png);
-        background-repeat: no-repeat;
-        background-position: center;
+        @extend %background;
         background-size: 70px;
     }
     
@@ -58,8 +55,7 @@
         border-radius: 4px;
         margin-bottom: 30px;
         background-image:url(../indeximages/astronaut.png);
-        background-repeat: no-repeat;
-        background-position: center;
+        @extend %background;
         background-size: 70px;
     }
 

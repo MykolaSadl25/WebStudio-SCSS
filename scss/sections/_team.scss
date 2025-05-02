@@ -68,9 +68,10 @@
             height: 44px;
             border-radius: 50%;
             background-color:$logo-color;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex-box();
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
             .team__icon{
                 fill: $text-color;
             }

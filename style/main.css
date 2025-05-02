@@ -16,9 +16,14 @@ h1, h2, h3, p {
   margin: 0;
 }
 
-.gallery__subtext, .gallery__item, .gallery__btn, .modal__comment, .modal__input, .modal__icons, .modal__icon, .footer__elem, .clients__item, .team__icon, .team__social, .header__phone, .header__mail, .header__contact, .header__link::after, .header__link {
+.gallery__subtext, .gallery__item, .gallery__btn, .modal__comment, .modal__input, .modal__icons, .modal__icon, .modal, .footer__elem, .clients__item, .team__icon, .team__social, .header__phone, .header__mail, .header__contact, .header__link::after, .header__link {
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(1, 0.45, 0, 1.15);
+}
+
+.features__item:nth-child(4):before, .features__item:nth-child(3):before, .features__item:nth-child(2):before, .features__item:first-child:before {
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 html {
@@ -213,8 +218,6 @@ body {
   border-radius: 4px;
   margin-bottom: 30px;
   background-image: url(../indeximages/antenna.png);
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 70px;
 }
 .features__item:nth-child(2):before {
@@ -226,8 +229,6 @@ body {
   border-radius: 4px;
   margin-bottom: 30px;
   background-image: url(../indeximages/clock.png);
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 70px;
 }
 .features__item:nth-child(3):before {
@@ -239,8 +240,6 @@ body {
   border-radius: 4px;
   margin-bottom: 30px;
   background-image: url(../indeximages/diagram.png);
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 70px;
 }
 .features__item:nth-child(4):before {
@@ -252,8 +251,6 @@ body {
   border-radius: 4px;
   margin-bottom: 30px;
   background-image: url(../indeximages/astronaut.png);
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 70px;
 }
 .features__subtitle {
@@ -380,8 +377,10 @@ body {
   border-radius: 50%;
   background-color: #2196F3;
   display: flex;
-  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
 }
 .team__social:hover .team__icon {
   fill: #FFF;
@@ -620,13 +619,11 @@ body {
 .modal {
   width: 528px;
   border-radius: 4px;
-  background: #fff;
+  background: #FFF;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   position: relative;
   padding: 40px;
   transition-property: transform;
-  transition-duration: 2500ms;
-  transition-timing-function: ease-in;
   transform: scale(1);
 }
 .modal__close {

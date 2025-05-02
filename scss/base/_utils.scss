@@ -3,6 +3,11 @@
     transition-timing-function: cubic-bezier(1,0.45,0,1.15);
 }
 
+%background{
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 @mixin flex-box($justify:center,$align:center,$wrap:wrap,$direction:column){
     display: flex;
     justify-content: $justify;

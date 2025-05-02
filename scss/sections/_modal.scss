@@ -25,14 +25,13 @@
 .modal {
   width: 528px;
   border-radius: 4px;
-  background: #fff;
+  background: $modal-bcg;
   box-shadow: 0px 1px 3px 0px $modal-shadow1,
     0px 1px 1px 0px $modal-shadow2, 0px 2px 1px 0px $modal-shadow3;
   position: relative;
   padding: 40px;
   transition-property: transform;
-  transition-duration: 2500ms;
-  transition-timing-function: ease-in;
+  @extend %animation;
   transform: scale(1);
 
   &__close {
