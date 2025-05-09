@@ -1,81 +1,126 @@
-.features{
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
 
-    &__list{
-        display: flex;
-        gap: 30px;
+  &__list {
+    display: flex;
+    gap: 30px;
+    @media screen and (min-width: 480px) {
+      display: flex;
+      flex-direction: column;
+    }
+    @media screen and (min-width: 768px) {
+      
+      display: flex;
+      flex-wrap: wrap;
+    }
+   }
+
+&__item{
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
     }
 
-    &__item:first-child:before{
-        content: "";
-        display: block;
-        width: 270px;
-        height: 120px;
-        background-color: $team-bcg;
-        border-radius: 4px;
-        margin-bottom: 30px;
-        background-image:url(../indeximages/antenna.png);
-        @extend %background;
-        background-size: 70px;
-    }
-
-    &__item:nth-child(2):before{
-        content: "";
-        display: block;
-        width: 270px;
-        height: 120px;
-        background-color: $team-bcg;
-        border-radius: 4px;
-        margin-bottom: 30px;
-        background-image:url(../indeximages/clock.png);
-        @extend %background;
-        background-size: 70px;
-    }
+    &:first-child:before {
+    content: "";
+    display: block;
     
-    &__item:nth-child(3):before{
-        content: "";
-        display: block;
-        width: 270px;
-        height: 120px;
-        background-color: $team-bcg;
-        border-radius: 4px;
-        margin-bottom: 30px;
-        background-image:url(../indeximages/diagram.png);
-        @extend %background;
-        background-size: 70px;
-    }
-    
-    &__item:nth-child(4):before{
-        content: "";
-        display: block;
-        width: 270px;
-        height: 120px;
-        background-color: $team-bcg;
-        border-radius: 4px;
-        margin-bottom: 30px;
-        background-image:url(../indeximages/astronaut.png);
-        @extend %background;
-        background-size: 70px;
-    }
+    height: 120px;
+    background-color: $team-bcg;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-image: url(../indeximages/antenna.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px;
+  }
 
-    &__subtitle{
-        color:$title-color;   
-        width: 270px;
+  &:nth-child(2):before {
+    content: "";
+    display: block;
+    
+    height: 120px;
+    background-color: $team-bcg;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-image: url(../indeximages/clock.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px;
+  }
+
+  &:nth-child(3):before {
+    content: "";
+    display: block;
+    
+    height: 120px;
+    background-color: $team-bcg;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-image: url(../indeximages/diagram.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px;
+  }
+
+  &:nth-child(4):before {
+    content: "";
+    display: block;
+    
+    height: 120px;
+    background-color: $team-bcg;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-image: url(../indeximages/astronaut.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px;
+  }
+}
+
+  
+
+  
+
+  &__subtitle {
+    color: $title-color;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 10px;
+    
+    @media screen and (min-width: 768px) {
+        text-align: start;
     }
+  }
 
-    &__text{
-        color: $accent-color;
-        width: 270px;
+  &__text {
+    color: $accent-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71; /* 171.429% */
     letter-spacing: 0.42px;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
     }
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
+  }
 }
