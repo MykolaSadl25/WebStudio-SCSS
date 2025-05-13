@@ -522,6 +522,18 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (min-width: 480px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .team__list {
   display: flex;
   gap: 30px;
@@ -705,6 +717,11 @@ body {
 .footer__text {
   width: 231px;
 }
+@media screen and (min-width: 1200px) {
+  .footer__text {
+    text-align: start;
+  }
+}
 .footer__logo {
   color: #2196F3;
   font-family: Raleway;
@@ -776,6 +793,7 @@ body {
   .footer__join {
     margin-left: 70px;
     margin-right: 0;
+    margin-top: 0;
   }
 }
 .footer__heading {
@@ -787,6 +805,11 @@ body {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__heading {
+    text-align: start;
+  }
 }
 .footer__items {
   display: flex;
@@ -868,11 +891,12 @@ body {
     flex-direction: column;
     align-items: start;
     justify-content: flex-end;
+    margin-top: 0;
+    margin-left: 93px;
   }
 }
 .footer__subbox {
   display: flex;
-  align-items: end;
 }
 @media screen and (min-width: 480px) {
   .footer__subbox {
@@ -889,7 +913,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__subbox {
     display: flex;
-    align-items: end;
+    flex-direction: row;
   }
 }
 .footer__title {
