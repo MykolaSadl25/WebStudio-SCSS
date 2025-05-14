@@ -17,7 +17,7 @@
   &__title {
     color: $text-color;
     text-align: center;
-    width: 360px;
+    width: 100%;
     font-size: 26px;
     font-weight: 900;
     line-height: 1.36; /* 136.364% */
@@ -27,6 +27,9 @@
     margin-right: auto;
     margin-bottom: 30px;
 
+    @media screen and (min-width: 480px) {
+    width: 360px;
+    }
     @media screen and (min-width: 1200px) {
       width: 696px;
       font-size: 44px;
