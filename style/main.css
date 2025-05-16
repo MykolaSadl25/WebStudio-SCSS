@@ -114,6 +114,8 @@ body {
 @media screen and (min-width: 768px) {
   .header__list {
     display: block;
+    display: flex;
+    gap: 50px;
     margin-left: 88px;
   }
 }
@@ -174,6 +176,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -693,7 +696,6 @@ body {
 @media screen and (min-width: 768px) {
   .clients__item {
     padding: 16px 60px;
-    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -789,13 +791,18 @@ body {
 }
 .footer__join {
   margin-top: 60px;
-  margin-left: 137px;
-  margin-right: 137px;
+}
+@media screen and (min-width: 480px) {
+  .footer__join {
+    margin-left: 137px;
+    margin-right: 137px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer__join {
     margin-left: 165px;
     margin-right: 0;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -865,12 +872,32 @@ body {
     justify-content: flex-end;
   }
 }
+.footer__wrap2 {
+  margin-top: 60px;
+}
+@media screen and (min-width: 480px) {
+  .footer__wrap2 {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__wrap2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__wrap2 {
+    margin-top: 0;
+  }
+}
 .footer__form {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: 0;
-  margin-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer__form {
@@ -953,7 +980,17 @@ body {
   width: 200px;
   height: 50px;
   border: none;
-  margin-left: 12px;
+  margin-left: 0;
+}
+@media screen and (min-width: 480px) {
+  .footer__btn {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__btn {
+    margin-left: 12px;
+  }
 }
 .footer__plane {
   width: 24px;
