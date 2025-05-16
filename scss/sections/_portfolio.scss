@@ -1,11 +1,20 @@
 .gallery{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
 
     &__items{
         display: flex;
-        gap: 8px;;
+        gap: 8px;
+        justify-content: start;
+        flex-wrap: wrap;   
+    @media screen and (min-width: 768px) {
         justify-content: center;
+    }
     }
 
     &__btn{
@@ -40,16 +49,27 @@
         flex-wrap:wrap;
         justify-content: center;
         margin-top: 50px;
+        
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
         gap: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+    }
     }
 
     &__item{
         border: 1px solid $border-color;
         background: $text-color;
-        flex-basis: calc((100% - 60px) /3);
         transition-property: box-shadow;
         @extend %animation;
-
+@media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) /2);
+    }
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 60px) /3);
+    }
         &:hover{
             border: 1px solid $border-color;
             background: $text-color;
