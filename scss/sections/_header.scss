@@ -130,18 +130,14 @@
 
   &__contact {
     color: $accent-color;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 1.14;
-    letter-spacing: 0.28px;
+    letter-spacing: 0.24px;
     display: flex;
     align-items: center;
     transition-property: color;
     @extend %animation;
-    @media screen and (min-width: 768px) {
-      font-size: 12px;
-      letter-spacing: 0.24px;
-    }
     @media screen and (min-width: 1200px) {
       font-size: 14px;
       letter-spacing: 0.28px;
@@ -149,16 +145,20 @@
 
     &:hover {
       color: $logo-color;
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 500;
       line-height: 1.14;
-      letter-spacing: 0.28px;
+      letter-spacing: 0.24px;
       .header__mail {
         fill: $logo-color;
       }
       .header__phone {
         fill: $logo-color;
       }
+      @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      letter-spacing: 0.28px;
+    }
     }
   }
 
