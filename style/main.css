@@ -1235,6 +1235,7 @@ body {
 .gallery__items {
   display: flex;
   gap: 8px;
+  row-gap: 15px;
   justify-content: start;
   flex-wrap: wrap;
 }
@@ -1272,12 +1273,14 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 36px;
+  row-gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .gallery__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: flex-start;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1289,6 +1292,7 @@ body {
   border: 1px solid #EEE;
   background: #FFF;
   transition-property: box-shadow;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .gallery__item {
@@ -1344,16 +1348,6 @@ body {
 }
 .gallery__text {
   padding: 20px 24px;
-}
-@media screen and (min-width: 768px) {
-  .gallery__text {
-    padding: 20px 24px 56px 24px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .gallery__text {
-    padding: 20px 24px;
-  }
 }
 .gallery__name {
   color: #000;
