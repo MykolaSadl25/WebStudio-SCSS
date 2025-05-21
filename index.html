@@ -29,6 +29,9 @@
     <header class="header">
       <div class="container header__box">
         <a href="./index.html" class="header__index">Web<span class="header__index2">Studio</span></a>
+        <svg class="header__burger" data-mobile-open>
+          <use href="./img/symbol-defs.svg#icon-lines"></use>
+        </svg>
         <nav class="header__navigation">
           <ul class="header__list">
             <li class="header__item">
@@ -58,6 +61,26 @@
             </a>
           </li>
         </ul>
+        <div class="mobile is-hidden" data-mobile>
+        <button class="mobile__close" type="button" data-mobile-close><svg class="mobile__icon">
+          <use href="./img/symbol-defs.svg#icon-cross"></use>
+        </svg></button>
+        <ul class="mobile__list">
+          <li class="mobile__item"><a class="mobile__link" href="./pages/Studio.html">Студія</a></li>
+          <li class="mobile__item"><a class="mobile__link" href="./pages/portfolio.html">Портфоліо</a></li>
+          <li class="mobile__item"><a class="mobile__link" href="#">Контакти</a></li>
+        </ul>
+        <ul class="mobile__items">
+          <li class="mobile__itm"><a class="mobile__contact" href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
+          <li class="mobile__itm"><a class="mobile__contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mobile__elements">
+          <li class="mobile__elem"><a class="mobile__social" href="#">Instagram</a></li>
+          <li class="mobile__elem"><a class="mobile__social" href="#">Twitter</a></li>
+          <li class="mobile__elem"><a class="mobile__social" href="#">Facebook</a></li>
+          <li class="mobile__elem"><a class="mobile__social" href="#">LinkedIn</a></li>
+        </ul>
+        </div>
       </div>
     </header>
     <!-- Головна частина сайту -->
@@ -462,6 +485,7 @@
       </div>
     </div>
     <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/mobile.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
