@@ -61,14 +61,14 @@ body {
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
   .header {
-    padding-top: 21px 0;
+    padding-top: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header {
-    padding-top: 24px 0;
+    padding-top: 24px;
   }
 }
 .header__box {
@@ -106,6 +106,7 @@ body {
 .header__burger {
   width: 40px;
   height: 40px;
+  margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .header__burger {
@@ -439,17 +440,6 @@ body {
 @media screen and (min-width: 1200px) {
   .hero__btn {
     padding: 10px 32px;
-  }
-}
-@keyframes scale {
-  0% {
-    transform: scale(0.5);
-  }
-  50% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.5);
   }
 }
 
@@ -803,7 +793,7 @@ body {
   }
 }
 .clients__item {
-  padding: 16px 13px;
+  padding: 16px 40px;
   border-radius: 4px;
   border: 1px solid #AFB1B8;
   transition-property: border;
@@ -911,12 +901,8 @@ body {
 }
 .footer__join {
   margin-top: 60px;
-}
-@media screen and (min-width: 480px) {
-  .footer__join {
-    margin-left: 137px;
-    margin-right: 137px;
-  }
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .footer__join {
@@ -1149,7 +1135,7 @@ body {
   transition-property: transform;
   transform: scale(1);
 }
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 480px) {
   .modal {
     width: 450px;
   }
